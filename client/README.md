@@ -3,7 +3,7 @@
 Create a `.env` file with:
 
 ```
-VITE_API_URL=http://localhost:5000
+VITE_API_URL=https://buzzboard-u9ki.onrender.com
 ```
 
 Run:

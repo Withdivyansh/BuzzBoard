@@ -17,3 +17,4 @@ async function markRead(req, res) {
 module.exports = { listMyNotifications, markRead };
 
 
+
