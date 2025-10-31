@@ -25,8 +25,37 @@ const path = require('path');
 
 const app = express();
 
-const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
-app.use(cors({ origin: CLIENT_URL, credentials: true }));
+// CORS
+// Support multiple allowed origins via CLIENT_URLS (comma-separated),
+// fall back to single CLIENT_URL or localhost. Also allow devtunnels.
+const explicitAllowedOrigins = (process.env.CLIENT_URLS || process.env.CLIENT_URL || 'http://localhost:5173')
+  .split(',')
+  .map((s) => s.trim())
+  .filter(Boolean);
+
+const devTunnelsHostnameRegex = /\.devtunnels\.ms$/i;
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    // Allow non-browser requests (no Origin header)
+    if (!origin) return callback(null, true);
+    try {
+      const url = new URL(origin);
+      const isExplicitlyAllowed = explicitAllowedOrigins.includes(origin);
+      const isDevTunnels = devTunnelsHostnameRegex.test(url.hostname);
+      if (isExplicitlyAllowed || isDevTunnels) {
+        return callback(null, true);
+      }
+    } catch (_) {
+      // If parsing fails, fall through to deny
+    }
+    return callback(new Error('Not allowed by CORS'));
+  },
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 app.use(morgan('dev'));
