@@ -3,7 +3,7 @@ export default function Landing() {
     <div className="min-h-screen bg-gradient-to-tr from-purple-100 via-blue-100 to-pink-100 flex flex-col w-full p-4">
       <div className="relative flex-1 flex flex-col items-center justify-center py-16 sm:py-24 text-center animate-fadeIn w-full max-w-7xl mx-auto">
         <img
-          src={import.meta.env.VITE_APP_LOGO_URL || '/brand-logo.jpeg'}
+          src={import.meta.env.VITE_APP_LOGO_URL || '/brand-logo.jpg'}
           alt="BuzzBoard Logo"
           className="w-32 h-32 mx-auto mb-6 drop-shadow-md animate-bounceOnce max-w-full rounded-full object-contain bg-white p-2 ring-1 ring-indigo-200"
           loading="lazy"
