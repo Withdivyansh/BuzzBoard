@@ -28,11 +28,8 @@ Here is a walkthrough of the BuzzBoard platform, from landing to the admin panel
 ### 1. Landing Page
 The first-look page for all visitors, introducing the platform's purpose.
 
-![BuzzBoard Landing Page](
-
 ![Image](https://github.com/user-attachments/assets/2bef320f-7d32-4477-bb60-3ad32aeb33e3)
 
-)
 
 ---
 
