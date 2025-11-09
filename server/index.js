@@ -25,8 +25,21 @@ const path = require('path');
 
 const app = express();
 
-const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
-app.use(cors({ origin: CLIENT_URL, credentials: true }));
+const allowedOrigins = (process.env.CLIENT_URLS || process.env.CLIENT_URL || 'http://localhost:5173')
+  .split(',')
+  .map((s) => s.trim())
+  .filter(Boolean);
+
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true); // allow non-browser or same-origin
+      if (allowedOrigins.includes(origin)) return callback(null, true);
+      return callback(new Error('Not allowed by CORS'));
+    },
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(cookieParser());
 app.use(morgan('dev'));
