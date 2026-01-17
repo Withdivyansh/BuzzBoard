@@ -28,7 +28,8 @@ Here is a walkthrough of the BuzzBoard platform, from landing to the admin panel
 ### 1. Landing Page
 The first-look page for all visitors, introducing the platform's purpose.
 
-![BuzzBoard Landing Page](Screenshots/Screenshot 2025-10-31 012009.png)
+![Image](https://github.com/user-attachments/assets/2bef320f-7d32-4477-bb60-3ad32aeb33e3)
+
 
 ---
 
@@ -38,12 +39,13 @@ Secure sign-up and login for all users.
 #### Sign Up Page
 New users can create an account with their name, email, and password.
 
-![BuzzBoard Sign Up Page](Screenshots/Screenshot 2025-10-31 012043.png)
+![Image](https://github.com/user-attachments/assets/75ff973c-a05e-4983-b2e3-f4991cb4657a)
+
 
 #### Log In Page
 Registered users can access their accounts.
 
-![BuzzBoard Log In Page](Screenshots/Screenshot 2025-10-31 012032.png)
+![Image](https://github.com/user-attachments/assets/5959b47a-f888-45ac-a8d2-e15803663d50)
 
 ---
 
@@ -53,12 +55,12 @@ Once logged in, users can interact with the community.
 #### Clubs Page
 Users can see a list of available clubs, join them, or create their own.
 
-![BuzzBoard Clubs Page](Screenshots/Screenshot 2025-10-31 011803.png)
+![Image](https://github.com/user-attachments/assets/93d1bec7-a6c2-4d4c-865c-46ed7c99befb)
 
 #### User Profile Page
 Users can view and manage their personal profile details.
 
-![BuzzBoard User Profile](Screenshots/Screenshot 2025-10-31 011828.png)
+![Image](https://github.com/user-attachments/assets/0b4a890b-8096-49a3-97aa-aa86d42863b0)
 
 ---
 
@@ -68,27 +70,28 @@ A dedicated dashboard for club organizers and administrators to manage the entir
 #### Admin Overview
 The main dashboard displays key statistics like total events, clubs, pending requests, and volunteers. It also shows recent event activity and new applicants.
 
-![BuzzBoard Admin Overview](Screenshots/Screenshot 2025-10-31 011840.png)
+![Image](https://github.com/user-attachments/assets/3c19e175-351b-4f92-a913-28f176b4dc00)
 
 #### Manage Events
 Admins can create new events using this detailed form.
 
-![BuzzBoard Admin Manage Events](Screenshots/Screenshot 2025-10-31 011859.png)
+![Image](https://github.com/user-attachments/assets/a885f78b-9ea8-4bf9-80d4-27c4aba8f203)
+
 
 #### Manage Members
 Admins can filter by club to see a detailed list of all current members.
 
-![BuzzBoard Admin Manage Members](Screenshots/Screenshot 2025-10-31 011908.png)
+![Image](https://github.com/user-attachments/assets/a9defa52-f4f3-45c9-992c-c131504f1aed)
 
 #### Manage Volunteers
 This panel shows a list of all users who have signed up to volunteer for events.
 
-![BuzzBoard Admin Manage Volunteers](Screenshots/Screenshot 2025-10-31 011926.png)
+![Image](https://github.com/user-attachments/assets/166263b9-e615-4ae1-ac8c-f72f85894834)
 
 #### Manage Join Requests
 Admins can approve or deny pending requests from users wanting to join clubs.
 
-![BuzzBoard Admin Join Requests](Screenshots/Screenshot 2025-10-31 011938.png)
+![Image](https://github.com/user-attachments/assets/80c56002-6bc3-40b4-aedf-200554809c74)
 
 ## 🚀 Getting Started
 
